@@ -1,8 +1,8 @@
 <?php
-namespace Aobo\NeteaseIM;
+namespace Aobo\Neteaseim;
 use Cache;
 
-class NeteaseIMClass
+class NeteaseimClass
 {
 	protected $appkey;
 	protected $appsecret;

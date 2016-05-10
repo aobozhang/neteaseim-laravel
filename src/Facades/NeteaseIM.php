@@ -1,8 +1,8 @@
-<?php namespace Aobo\NeteaseIM\Facades;
+<?php namespace Aobo\Neteaseim\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class NeteaseIM extends Facade
+class Neteaseim extends Facade
 {
 
     /**

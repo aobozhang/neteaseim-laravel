@@ -1,8 +1,8 @@
-<?php namespace Aobo\NeteaseIM;
+<?php namespace Aobo\Neteaseim;
 
 use Illuminate\Support\ServiceProvider;
 
-class NeteaseIMServiceProvider extends ServiceProvider {
+class NeteaseimServiceProvider extends ServiceProvider {
 
     /**
     * Bootstrap the application services.
@@ -30,7 +30,7 @@ class NeteaseIMServiceProvider extends ServiceProvider {
 
         $this->app->singleton('neteaseim', function($app){
 
-            return new NeteaseIMClass($app['config']['neteaseim']);
+            return new NeteaseimClass($app['config']['neteaseim']);
 
         });
 
@@ -38,10 +38,10 @@ class NeteaseIMServiceProvider extends ServiceProvider {
 
             $aliases = $app['config']['aliases'];
 
-            if(empty($aliases['NeteaseIM'])){
+            if(empty($aliases['Neteaseim'])){
 
                 $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-                $loader->alias('NeteaseIM','Aobo\NeteaseIM\Facades\NeteaseIM');
+                $loader->alias('Neteaseim','Aobo\Neteaseim\Facades\Neteaseim');
 
             }
         });
