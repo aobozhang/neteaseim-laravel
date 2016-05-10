@@ -1,0 +1,27 @@
+{
+    "name": "aobozhang/neteaseim-laravel",
+    "description": "used neteaseim as laravel facades",
+    "keywords": ["netease", "neteaseim", "laravel", "im"],
+    "type": "library",
+    "homepage": "https://github.com/aobozhang",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "authors": [
+        {
+            "name": "Aobo",
+            "email": "aobozhang@gmail.com",
+            "homepage": "https://github.com/aobozhang",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Aobo\\NetEaseIM\\": "src/"
+        }
+    },
+    "suggest": {
+        "laravel/framework": "5.1.*"
+    }
+}
