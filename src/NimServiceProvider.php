@@ -2,7 +2,7 @@
 
 use Illuminate\Support\ServiceProvider;
 
-class NeteaseimServiceProvider extends ServiceProvider {
+class NimServiceProvider extends ServiceProvider {
 
     /**
     * Bootstrap the application services.
@@ -30,7 +30,7 @@ class NeteaseimServiceProvider extends ServiceProvider {
 
         $this->app->singleton('neteaseim', function($app){
 
-            return new NeteaseimClass($app['config']['neteaseim']);
+            return new NimClass($app['config']['neteaseim']);
 
         });
 
