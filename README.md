@@ -1,7 +1,7 @@
 # easemob-facades for laravel
 used Neteaseim as Normal laravel facades
 
-
+[![Latest Stable Version](https://poser.pugx.org/aobozhang/neteaseim-laravel/v/stable)](https://packagist.org/packages/aobozhang/neteaseim-laravel) [![Total Downloads](https://poser.pugx.org/aobozhang/neteaseim-laravel/downloads)](https://packagist.org/packages/aobozhang/neteaseim-laravel) [![Latest Unstable Version](https://poser.pugx.org/aobozhang/neteaseim-laravel/v/unstable)](https://packagist.org/packages/aobozhang/neteaseim-laravel) [![License](https://poser.pugx.org/aobozhang/neteaseim-laravel/license)](https://packagist.org/packages/aobozhang/neteaseim-laravel)
 
 ## Installation  
 
