@@ -26,7 +26,7 @@ Modify "config\app.php"
 
             ...,
 
-            Aobo\Neteaseim\NeteaseimServiceProvider::class,
+            Aobo\Neteaseim\NimServiceProvider::class,
 
         ],
     ];

@@ -2,7 +2,7 @@
 namespace Aobo\Neteaseim;
 use Cache;
 
-class NeteaseimClass
+class NimClass
 {
 	protected $appkey;
 	protected $appsecret;
