@@ -32,7 +32,7 @@ class NeteaseimClass
 	 * @param  array $option 包含创建id的参数：accid,name,props,icon,token
 	 * @return json          "Content-Type": "application/json; charset=utf-8"
 	 */
-	public function user_cerate($option)
+	public function user_create($option)
 	{
 		$url = 'nimserver/user/create.action';
 		return $this->neteaseim_post($url, $option);
@@ -358,19 +358,21 @@ class NeteaseimClass
 	{
 		$api = $this->url . $url;
 
-		$appkey   = $this->appkey;
-		$nonce    = str_random(64);
-		$curtime  = time();
-		$checksum = sha1($appkey.$nonce.$curtime);
+		$appkey    = $this->appkey;
+		$appsecret = $this->appsecret;
+		$nonce     = str_random(64);
+		$curtime   = time();
+		$checksum  = sha1($appsecret.$nonce.$curtime);
 
 		$header   = [];
 		$header[] = 'AppKey: '.$appkey;
 		$header[] = 'Nonce: '.$nonce;
 		$header[] = 'CurTime: '.$curtime;
 		$header[] = 'CheckSum: '.$checksum;
-		$header[] = 'Content-Type: application/x-www-form-urlencoded;charset=utf-8';
+		$header[] = 'Content-Type: application/x-www-form-urlencoded';
 
-		return $this->postCurl($api, $body, $header, "POST");
+		$param = http_build_query($body);
+		return $this->postCurl($api, $param, $header, "POST");
 	}
 
 	/**

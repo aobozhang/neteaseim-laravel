@@ -7,6 +7,11 @@ $option = [
     'appsecret'   => env('NETEASEIM_APPSECRET', ''),
 ];
 
-$easemob = new NeteaseimClass($option);
+$neteaseim = new NeteaseimClass($option);
 
-var_dump($easemob->showFriends('1234'));
+$param = [
+    'accid' => 'test-accid-'.str_random(32),
+    'name'  => 'test-name-'.str_random(32)
+];
+
+var_dump($neteaseim->user_create($param));
