@@ -41,7 +41,7 @@ class NimServiceProvider extends ServiceProvider {
             if(empty($aliases['Neteaseim'])){
 
                 $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-                $loader->alias('Neteaseim','Aobo\Neteaseim\Facades\Neteaseim');
+                $loader->alias('Neteaseim','Aobo\Neteaseim\Facades\Nim');
 
             }
         });

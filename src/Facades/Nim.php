@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Facade;
 
-class Neteaseim extends Facade
+class Nim extends Facade
 {
 
     /**
